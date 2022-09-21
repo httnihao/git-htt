@@ -1,10 +1,10 @@
-package htt.gti;
-
-public class gittest {
-    public static void main(String[] args) {
-        System.out.println("hello git");
-        System.out.println("hello git2");
-        System.out.println("hello git4");
-        System.out.println("hello git3");
-    }
+pipeline {
+  agent any
+  stages {
+       stage('Stage 1') {
+             step {
+                    echo 'hello world!'
+             }
+       }
+  }
 }
